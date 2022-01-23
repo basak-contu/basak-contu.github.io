@@ -460,7 +460,130 @@ nav .brand-logo img {
 /*--------------------*/
 /* PORTFOLIO */
 /*--------------------*/
+#portfolio{ 
+  display: inline;
+  padding-bottom: 100px;
+  float: left;
+  width: 100%;
+}
 
+
+.portfolio-top{
+  display: inline;  
+  padding-top: 60px;
+  float: left;
+  width: 100%; 
+}
+
+.portfolio-top-inner{
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+.portfolio-top-inner h2{
+  color: #fff;
+}
+
+.portfolio-bottom{
+  display: inline;
+  padding-top: 50px;
+  width: 100%;
+  float: left;
+}
+
+
+.portfolio-bottom-inner{
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+
+#portfolio-list{
+  display: inline;
+  float: left;
+  margin-left: -1%;
+  width: 100%;
+}
+
+#portfolio-list .mix{
+  display: none;
+  float: left;
+  height: 320px;
+  margin-bottom: 1.33%;
+  margin-left: 1%;
+ 
+ -webkit-transition: all 0.2s ease 0s;
+ -o-transition: all 0.2s ease 0s;
+ transition: all 0.2s ease 0s;
+}
+
+#portfolio-list .mix a{
+  display: block; 
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+#portfolio-list .mix > a::before {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 solid transparent;
+  content: "";
+  height: 100.5%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: border-width 0.2s ease 0s, border-color 0.2s ease 0s;
+  width: 50.5%;
+}
+
+
+#portfolio-list .mix:hover > a::before {
+  opacity: 0.8;
+  -webkit-transition: background-color 0.5s ease-in-out;
+-moz-transition: background-color 0.5s ease-in-out;
+-o-transition: background-color 0.5s ease-in-out;
+-ms-transition: background-color 0.5s ease-in-out; 
+transition: background-color 0.5s ease-in-out;
+ 
+}
+
+
+#portfolio-list .mix a img{
+  width: 50%;
+}
+
+.project img{
+  float:left; 
+
+  margin-right:15px;
+}
+
+
+
+.view-icon {
+  color: #fff;
+  top: 42%;
+  visibility: hidden;  
+  font-size: 50px !important;
+  left: 1%;
+  position: absolute;
+ 
+}
+
+
+#portfolio-list .mix:hover .view-icon {
+  left: 43%;
+  visibility: visible;  
+}  
+
+
+#portfolio-list .mix:hover {
+}
+/*
 
 #portfolio{ 
   display: inline;
@@ -614,7 +737,7 @@ transition: background-color 0.5s ease-in-out;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
+*/ 
 /*--------------------*/
 /* FACTS */
 /*--------------------*/
@@ -1180,6 +1303,7 @@ textarea.materialize-textarea {
 .overlay-content .post-comment:hover{
   color: #fff !important;
 }
+
 
 
 /*--------------------*/
@@ -1846,6 +1970,22 @@ textarea.materialize-textarea {
   margin-top: 2.5vh;
   margin-bottom: 1vh;
   margin-left: 31.5vh;
+}
+
+/*
+MAKE-IT-GREEN PROJECT
+*/
+.view-demo-button {
+  display: block;
+  width: 115px;
+  height: 50px;
+  background: #B00B69;
+  
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 50px;
 }
 
 /*--------------------*/
